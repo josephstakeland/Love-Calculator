@@ -1,0 +1,195 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4158D0;
+    height: 60vmax;
+    background-color: #C850C0;
+
+  }
+
+  .article1 {
+    position: absolute;
+    z-index: 3;
+  }
+  .card-1 {
+      position: absolute;
+      height: 420px;
+      left: 20%;
+      z-index:10 ;
+      width: 300px;
+      padding: 10px;
+      color: #5d0391;
+      background-image: linear-gradient(to right bottom, #5d0391, #7b05ae, #9b05cb, #bd00e7, #bd00e7);
+      background-size: 200% 200%;
+      border-radius: 12px;
+      transition: all 0.3s;
+      transition: transform 0.3s ease-in-out;
+      -webkit-box-shadow: 7px 10px 11px -6.5px #5d0391;
+      -moz-box-shadow: 7px 10px 11px -6.5px #5d0391;
+      box-shadow: 7px 10px 11px -6.5px #5d0391;
+  
+    }
+  
+  .card-2 {
+    display: block;
+    position: absolute;
+    right: 12%;;
+    z-index: 1;
+    width: 290px;
+    padding: 10px;
+    height: 420px;
+    color: rgb(13, 153, 158);
+    background-image: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    background-size: 200% 200%;
+    -webkit-box-shadow: 7px 10px 11px -6.5px #5d0391;
+    -moz-box-shadow: 7px 10px 11px -6.5px #5d0391;
+    box-shadow: 7px 10px 11px -6.5px #5d0391;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transition: 0.5s;
+    
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  }
+
+  .title1 {
+    font-size: 3em;
+    padding: 20% 0 10% 0;
+    text-align: center;
+  }
+  #title2 {
+    text-align: center;
+  }
+
+  .heart {
+    color: #ff0037;
+  }
+
+  #name1{
+    color: #ff0037;
+  }
+
+  #name2 {
+    color: #ff0037;
+  }
+  
+  .close {
+    position: absolute;
+    left: 88%;
+    top: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    border-radius: 10px;
+    border-color: #92FE9D;
+    color: white;
+    
+    
+  }
+  
+  
+    .card-int {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      font-size: 14px;
+      border-radius: 6px;
+      background-color: white;
+    }
+    
+    
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .card-data {
+      padding: 20px;
+      font-size: 14px;
+    }
+    
+    
+    .btn {
+      width: 100%;
+      margin-top: 15px;
+      background-image: linear-gradient(to right bottom, #5d0391, #7b05ae, #9b05cb, #bd00e7, #bd00e7);
+      background-size: 200% 200%;
+      border: none;
+      margin-top: 35px;
+      padding: 8px 10px;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: transform 0.1s ease-in;
+    }
+    
+    button:active {
+      transform: translateY(3px);
+    }
+    
+    .card-1:hover {
+      animation: gradient 0.8s ease-in 1;
+    }
+    
+    @keyframes gradient {
+      0% {
+        background-position: 200% 200%;
+      }
+    
+      100% {
+        background-position: 400% 400%;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 2288px) {
+      .card-2 {
+        position: absolute;
+        left: 46%;
+        bottom: 40%;
+      }
+      .card-1 {
+        left: 30%;
+        bottom: 40%;
+      }
+
+      .title1 {
+        font-size: 2em;
+        padding: 20% 0 10% 0;
+        text-align: center;
+      }
+    }
+
+    @media only screen and (min-width: 375px) and (max-width: 768px) {
+        .card-2 {
+          position: absolute;
+          bottom: -6%;
+          left: 10%;
+          height: 300px;
+        }
+        .card-1 {
+          left: 8%;
+        }
+
+        .title1 {
+          font-size: 2em;
+          padding: 20% 0 10% 0;
+          text-align: center;
+        }
+      }
+
+      @media only screen and (min-width: 240px) and (max-width: 375px) {
+        .card-2 {
+          position: absolute;
+          bottom: -1%;
+          right: 7%
+        }
+      }
+
